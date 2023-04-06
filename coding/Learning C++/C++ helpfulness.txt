@@ -1,40 +1,29 @@
-# learn-cpp
-# Basic starter
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
 
-    #include <iostream>
-    #include <string>
-    #include <fstream>
-    using namespace std;
+int main() {
 
-	void function() {
-		codeinfunction()
-	}
-	
-    int main() {
-		function()
-    }
+}
 
-# #include
+#include
 	use to use some functions like python modules
 
-
-	#include <ofstream>
+	include <ofstream>
 	to write to/create files;
 	#include <ifstream>
 	to read from files;
 	#include <fstream>
 	to read and write from files;       https://www.w3schools.com/cpp/cpp_files.asp
 
-
-# Data types
-
+Data types
 	Data Type	Size		Description
 	boolean		1 byte		Stores true or false values, cout << (10 > 9); cout << (10 == 15); bool = true;
 	char		1 byte		Stores a single character/letter/number, or ASCII values
 	int		2 or 4 bytes	Stores whole numbers, without decimals
 	float		4 bytes		Stores fractional numbers, containing one or more decimals. Sufficient for storing 7 decimal digits
 	double		8 bytes		Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits
-
 
 	Operator	Name		 	 	Description												 	Example
 	+			Addition		 	Adds together two values									 	x + y	
@@ -54,8 +43,7 @@
 	>=			Greater than or equal to	x >= y	
 	<=			Less than or equal to		x <= y
 
-# commands
-
+commands
 	(string).append()
 	(string).length()
 	string[number]
@@ -66,17 +54,18 @@
 	ifstream FileVarThing("filename.txt")
 	ofstream FileVarThing("filename.txt")
 
-# functions/how to excute code
-Use, int main() {code}, for the auto excuting code 
-and, void [Function name](parameters) {code}, inside of  with parameters(or not) to excute
+functions/how to excute code
+	Use, int main() {code}, for the auto excuting code 
+	and, void [Function name](parameters) {code}, inside of  with parameters(or not) to excute
 
 	to use parameters do like:
 	void dfgh((data type) (name) = (default value),(next parameter) ) {
 		cout << (name)
 		return (variable);
 	}
-USE:
 
+
+	USE:
 	#include <string>
 	#include <iostream>
 	using namespace std;
@@ -86,16 +75,14 @@ USE:
 		return (variable);
 	}
 
-# character data type
-
+character data type
 	char a = 65, b = 66, c = 67;
 	cout << a; #A
 	cout << b; #B
 	cout << c; #C
 		65 is the ASCII value for A
 
-# strings
-
+strings
 	To use strings, you must include an additional header file in the source code, the <string> library:
 	#include <string>
 
@@ -112,38 +99,33 @@ USE:
 	string combined = dfgh + xcvb
 	cout << combined
 
-# + and append()
-
++ and append()
 	string dfgh = "something";
 	string xcvb = " or another";
 	string message = dfgh + xcvb; OR string message = dfgh.append(xcvb);
 	cout << message;
 	Output: something or another
 
-# size()/length()
-
+size()/length()
 	string dfgh = "something";
 	string dfghLen = dfgh.length();
 	cout << dfghLen;
 	 Output: 9
 
-# string[]
-
+string[]
 	string dfgh = "something";
 	cout << dfgh[4];
 	dfgh[2] = 's';
 	cout << dfgh;
 	 Output: t (\n) sosething 
  
-# constants/const
-
+constants/const
 	 Makes read only and good if you are unlikly to change the value
 	const string dfgh = "something";
 	dfgh[0] = 't';
 	 Output: Error
 
-# Declare muiltiple varibles
-
+Declare muiltiple varibles
 	string dfgh = "something", xcvb = " or another";
 	cout << dfgh + xcvb;
 	 Output: something or another
@@ -152,8 +134,7 @@ USE:
 	cout << dfgh << dfgh1 + dfgh2;
 	 Output: somethingsomethingsomething
 
-# read and write files/ofstream and ifstream
-
+read and write files/ofstream and ifstream
 	#include fstream
 	 make file
 	ofstream FileName("filename.txt");

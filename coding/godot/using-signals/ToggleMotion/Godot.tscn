@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ToggleMotion/icon.png" type="Texture" id=1]
+[ext_resource path="res://ToggleMotion/Godot.gd" type="Script" id=2]
+
+[node name="togglemotion" type="Node2D"]
+
+[node name="Godot" type="Sprite" parent="."]
+position = Vector2( 456, 286 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Timer" type="Timer" parent="Godot"]
+autostart = true
+
+[node name="Button" type="Button" parent="."]
+margin_left = 19.0
+margin_top = 16.0
+margin_right = 326.0
+margin_bottom = 134.0
+text = "toggle mtion"
+
+[connection signal="pressed" from="Button" to="Godot" method="_on_Button_pressed"]
