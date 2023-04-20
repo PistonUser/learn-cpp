@@ -7,11 +7,11 @@
     using namespace std;
 
 	void function() {
-		codeinfunction()
+		cout << "function\n\n";
 	}
 	
     int main() {
-		function()
+		function();
     }
 
 # #include
