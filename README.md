@@ -24,6 +24,8 @@
 	to read from files;
 	#include <fstream>
 	to read and write from files;       https://www.w3schools.com/cpp/cpp_files.asp
+	#include <cmath>
+	to use some math functions;         https://cplusplus.com/reference/cmath/
 
 
 # Data types
