@@ -11,7 +11,7 @@ int main() {
     };
 
     for (int i = 0; i < sizeof(points) / sizeof(int) / 2; i++) {
-        for (int a = 0; a < sizeof(points) / sizeof(int) / 2; i++) {
+        for (int a = 0; a < sizeof(points) / sizeof(int) / 2; a++) {
             float b = hypot(points[i][0] - points[a][0] ,points[i][1] - points[a][1]);
 
     }
